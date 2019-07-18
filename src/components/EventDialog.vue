@@ -5,6 +5,7 @@
       <v-card-title primary-title class="title">{{ data.event_name }}</v-card-title>
       <v-divider/>
       <v-card-text>
+        <img class=mainimage :src="data.image" v-if="data.image"/>
         <p class="subheading">{{ data.description }}</p>
         <p class="body-2">{{ data.remarks }}</p>
         <v-list dense>
@@ -12,6 +13,12 @@
             <h3 class="body-1">
               <v-icon>calendar_today</v-icon>
               {{ data.start_date }} ～ {{ data.end_date }}
+            </h3>
+          </v-list-tile>
+          <v-list-tile v-if="data.start_date && !data.end_date">
+            <h3 class="body-1">
+              <v-icon>calendar_today</v-icon>
+              {{ data.start_date }}
             </h3>
           </v-list-tile>
           <v-list-tile v-if="data.contact">
@@ -49,6 +56,12 @@
               {{ data.transportation }}
             </h3>
           </v-list-tile>
+          <v-list-tile v-if="data.link">
+            <h3 class="body-1">
+              <v-icon>link</v-icon>
+                <a :href="data.link">{{ data.link }}</a>
+            </h3>
+          </v-list-tile>
         </v-list>
       </v-card-text>
     </v-card>
@@ -68,5 +81,9 @@ export default {
 </script>
 
 <style>
-
+.mainimage {
+  height: 20vh;
+  float: right;
+  padding-left: 1em;
+}
 </style>

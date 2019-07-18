@@ -6,6 +6,7 @@
           <v-chip color="green" text-color="white">{{ data.category }}</v-chip>
           <v-card-title primary-title class="title">{{ data.event_name }}</v-card-title>
           <v-divider/>
+          <v-card-text><img class=mainimage :src="data.image" v-if="data.image"/></v-card-text>
           <v-card-text>{{ data.description }}</v-card-text>
         </v-card>
       </template>
