@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <title>オープンイベント埼玉 - 埼玉県広報情報オープンデータ</title>
-    <h1 class="display-2 text-xs-center mt-4">オープンイベント埼玉</h1>
+    <title>オープンイベントさいたま - 埼玉県広報情報オープンデータ</title>
+    <h1 class="display-2 text-xs-center mt-4">オープンイベントさいたま</h1>
     <v-content>
       <Events/>
     </v-content>
