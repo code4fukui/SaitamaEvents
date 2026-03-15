@@ -1,5 +1,7 @@
 # SaitamaEvents
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 A web application to display events in Saitama Prefecture, Japan.
 
 ## Features
