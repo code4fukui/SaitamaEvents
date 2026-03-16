@@ -30,4 +30,4 @@ The event data is sourced from the [Saitama Prefecture Open Data Portal](https:/
 4. Open the application in your browser at `http://localhost:8080/`.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+MIT License — see [LICENSE](LICENSE).
